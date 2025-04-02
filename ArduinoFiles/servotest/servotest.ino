@@ -13,6 +13,6 @@ void loop() {
   // myServo.write(0);   // Move to 0 degrees
   // delay(2000);        // Wait 2 seconds
 
-  myServo.write(0); // Move to 180 degrees
+  myServo.write(90); // Move to 180 degrees
   delay(2000);        // Wait 2 seconds
 }
