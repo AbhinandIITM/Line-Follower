@@ -1,6 +1,8 @@
-#define ENA 9  // PWM for speed control
-#define IN1 8  // Motor direction
-#define IN2 7  // Motor direction
+#define ENA 7  // PWM for speed control
+#define IN1 3  // Motor direction
+#define IN2 2  // Motor direction
+
+#define 
 
 void setup() {
   pinMode(ENA, OUTPUT);
@@ -17,7 +19,7 @@ void loop() {
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
   analogWrite(ENA, 255);  // Max speed (0-255)
-  delay(4000);
+  delay(1000);
 
   // Stop Motor
   Serial.println("Motor Stopped");
@@ -29,7 +31,7 @@ void loop() {
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
   analogWrite(ENA, 255);  // Try full speed
-  delay(4000);
+  delay(1000);
 
   // Stop Motor
   Serial.println("Motor Stopped");
